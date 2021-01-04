@@ -1,0 +1,14 @@
+terminal:
+django-admin startproject mysite .
+python manage.py runserver
+activate mysite
+python manage.py startapp polls
+python manage.py migrate
+python manage.py makemigrations polls
+python manage.py shell
+q.save()
+q.id
+Question.objects.get(pub_date__year=current_year)
+q.choice_set.create(choice_text='Not much', votes=0)
+q.choice_set.all()
+q.choice_set.filter(choice_text__startswith='Just hacking')
