@@ -1,2 +1,2 @@
-My first Django project
+My first Django project.
 A polls app
